@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "process",
+			"command": "${workspaceFolder}/bin/Debug/StartingProject.exe",
+			"label": "Run the program",
+			"options": {
+				"cwd": "${workspaceFolder}/bin/Debug"
+			},
+			"problemMatcher": []
+		},
+		{
+			"type": "process",
+			"label": "Run make build",
+			"command": "make",
+			"args": [
+				"config=debug"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: g++.exe"
+		}
+	]
+}
