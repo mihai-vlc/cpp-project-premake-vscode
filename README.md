@@ -20,3 +20,6 @@ application in VSCode on windows with MSYS2 as the build platform.
 6. Ctrl + Shift + B will build the project (run make)
 7. F5 will build + run the project in debug mode
 
+
+
+If you are looking for a setup that uses MSBuild the following tool can be used: https://github.com/shoxsz/proj-maker-cpp-vscode-premake
